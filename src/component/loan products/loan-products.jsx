@@ -6,42 +6,50 @@ const loanProducts = [
       altText: "House and coins representing a home loan",
       title: "Home Loan",
       subtitle: "Flexible and Affordable",
-      description: "Get your dream home with low-interest rates and flexible repayment options."
+      description: "Get your dream home with low-interest rates and flexible repayment options.",
+    link:"/HomeLoans"
+
+
     },
     {
       imgSrc: "img/product-img/presonallaon.jpg",
       altText: "Stack of money representing a personal loan",
       title: "Personal Loan",
       subtitle: "Quick & Easy Approval",
-      description: "Access funds for any purpose with fast approval and minimal documentation."
+      description: "Access funds for any purpose with fast approval and minimal documentation.",
+      link:"/PersonalLoans"
     },
     {
       imgSrc: "img/product-img/businessloan.jpg",
       altText: "Couple discussing business loan options",
       title: "Business Loan",
       subtitle: "Fuel Your Growth",
-      description: "Expand your business with tailored financial solutions and expert guidance."
+      description: "Expand your business with tailored financial solutions and expert guidance.",
+      link: "/BusinessLoans"
     },
     {
       imgSrc: "img/product-img/carloan.jpg",
       altText: "Car Loan",
       title: "Car Loan",
       subtitle: "Flexible Repayment Terms",
-      description: "Choose a loan term that fits your budget, from short-term to long-term plans."
+      description: "Choose a loan term that fits your budget, from short-term to long-term plans.",
+      link: "/Carloan"
     },
     {
       imgSrc: "img/product-img/Consumerloan.jpg",
       altText: "Consumer Loan",
       title: "Consumer Loan",
       subtitle: "Flexible Loan Amounts",
-      description: "Borrow the amount as per your requirement without any collateral."
+      description: "Borrow the amount as per your requirement without any collateral.",
+      link: "/ ConsumerLoan"
     },
     {
       imgSrc: "img/product-img/commercialloan.jpg",
       altText: "Commercial Vehicle Loan",
       title: "Commercial Vehicle Loan",
       subtitle: "Flexible Loan Amounts",
-      description: "Flexible repayment terms to match your business cash flow."
+      description: "Flexible repayment terms to match your business cash flow.",
+      link: "/CommercialVehicleLoan"
     }
   ];
   
@@ -58,7 +66,7 @@ const loanProducts = [
                   <h4>{product.title}</h4>
                   <h5>{product.subtitle}</h5>
                   <p>{product.description}</p>
-                  <Link to="loanForm">
+                  <Link to={product.link}>
                   <button type="button" className="btn btn-secondary">Apply Now</button>
                   </Link>
                 </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from '../component/comman/header';
 
 const LoanForm = () => {
   const [formData, setFormData] = useState({
@@ -23,7 +24,7 @@ const LoanForm = () => {
 
   return (
     <div>
-      {/* Inline CSS using a <style> tag inside JSX */}
+      <Header />
       <style>{`
         .loan-form-container {
           display: flex;
